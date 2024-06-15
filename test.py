@@ -42,8 +42,8 @@ app.add_middleware(
 
 
 # Global Variables
-person_mmdet_config_file = "source/yolov8_x_syncbn_fast_8xb16-500e_coco.py"
-person_mmdet_checkpoint = 'source/yolov8_x_syncbn_fast_8xb16-500e_coco_20230218_023338-5674673c.pth'
+person_mmdet_config_file = "checkpoint_danger/yolov8_x_syncbn_fast_8xb16-500e_coco.py"
+person_mmdet_checkpoint = 'checkpoint_danger/yolov8_x_syncbn_fast_8xb16-500e_coco_20230218_023338-5674673c.pth'
 person_mmdet_model = init_detector(person_mmdet_config_file, person_mmdet_checkpoint, device='cuda:0')
 polygon_points = []
 
@@ -551,13 +551,13 @@ def computer_object_distance(object_infor):
 
 # Load Models
 print("Loading models...")
-person_mmdet_config_file1 = "checkpoint_distance/yolov8_x_mask-refine_syncbn_fast_8xb16-500e_coco.py"
-person_mmdet_checkpoint1 = 'checkpoint_distance/yolov8_x_mask-refine_syncbn_fast_8xb16-500e_coco_20230217_120411-079ca8d1.pth'
+person_mmdet_config_file1 = "Checkpoint_Estimate_Distance/yolov8_x_mask-refine_syncbn_fast_8xb16-500e_coco.py"
+person_mmdet_checkpoint1 = 'Checkpoint_Estimate_Distance/yolov8_x_mask-refine_syncbn_fast_8xb16-500e_coco_20230217_120411-079ca8d1.pth'
 
 person_mmdet_model1 = init_detector(person_mmdet_config_file1, person_mmdet_checkpoint1, device='cuda:0')
 
-vehicle_mmdet_config_file = "checkpoint_distance/yolov8_x_mask-refine_syncbn_fast_8xb16-500e_coco.py"
-vehicle_mmdet_checkpoint = 'checkpoint_distance/yolov8_x_mask-refine_syncbn_fast_8xb16-500e_coco_20230217_120411-079ca8d1.pth'
+vehicle_mmdet_config_file = "Checkpoint_Estimate_Distance/yolov8_x_mask-refine_syncbn_fast_8xb16-500e_coco.py"
+vehicle_mmdet_checkpoint = 'Checkpoint_Estimate_Distance/yolov8_x_mask-refine_syncbn_fast_8xb16-500e_coco_20230217_120411-079ca8d1.pth'
 
 vehicle_mmdet_model = init_detector(vehicle_mmdet_config_file, vehicle_mmdet_checkpoint, device='cuda:0')
 
