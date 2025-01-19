@@ -11,3 +11,21 @@ Tải checkpoint
 Bạn cần tải các checkpoint từ repository chính thức của MMYOLO. Bạn có thể tải checkpoint YOLOv8 từ đường dẫn sau:
 
 https://github.com/open-mmlab/mmyolo/tree/main/configs/yolov8
+
+
+# OpenMMLab Environment Setup
+
+This guide walks you through the steps to set up the OpenMMLab environment with the necessary dependencies.
+
+## Requirements
+
+- Conda
+- Python 3.8
+
+## Steps to Set Up
+
+### 1. Create and Activate the Conda Environment
+First, create a new conda environment with Python 3.8:
+
+```bash
+conda create --name openmmlab python=3.8 -y
