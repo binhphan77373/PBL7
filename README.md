@@ -29,3 +29,8 @@ First, create a new conda environment with Python 3.8:
 
 ```bash
 conda create --name openmmlab python=3.8 -y
+
+### 2. Install PyTorch and Dependencies
+Next, install PyTorch version 1.9.0 along with torchvision and the necessary CUDA toolkit:
+```bash
+conda install pytorch=1.9.0 torchvision=0.10.0 cudatoolkit=11.1 -c pytorch
