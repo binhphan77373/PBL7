@@ -41,6 +41,7 @@ Install other required libraries:
 pip install timm
 pip install segmentation-models-pytorch
 mim install mmyolo==0.6.0
+mim install mmpose==1.3.1
 ```
 
 ### 5. Verify Installation
